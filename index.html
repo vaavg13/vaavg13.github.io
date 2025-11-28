@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasilis Avgerinos - Researcher CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // VS Code Light Theme inspired
+              background: '#f3f3f3', 
+              foreground: '#1e1e1e', 
+              
+              // VS Code Dark Theme inspired
+              'background-dark': '#1e1e1e', 
+              'foreground-dark': '#d4d4d4', 
+              
+              muted: '#6e6e6e', 
+              'muted-dark': '#858585', 
+              
+              border: '#e5e5e5', 
+              'border-dark': '#333333',
+              
+              // Accents
+              primary: '#0f766e', // Deep Teal for Light Mode (replaced Blue)
+              'primary-dark': '#4ec9b0', // Minty Cyan for dark mode (VS Code default)
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      
+      /* Smooth scrolling */
+      html { scroll-behavior: smooth; }
+
+      /* Scrollbar styling - Minimal */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #424242;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-NdvJNJ2r.js"></script>
+  </head>
+  <body class="bg-background dark:bg-background-dark text-foreground dark:text-foreground-dark antialiased transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
