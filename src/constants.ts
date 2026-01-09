@@ -28,17 +28,17 @@ export const PUBLICATIONS: Publication[] = [
     conference: "IEEE ICC 2025",
     year: 2025,
     url: "https://ieeexplore.ieee.org/abstract/document/11162043",
-    tags: ["Semantic Comms", "LLM", "6G"]
+    tags: ["GNN","Time series Forecasting", "6G"]
   },
-  // {
-  //   id: "p2",
-  //   title: "Deep Reinforcement Learning for Massive MIMO Beamforming",
-  //   authors: "V. Avgerinos, J. Doe",
-  //   conference: "NeurIPS Workshop on AI for Science",
-  //   year: 2023,
-  //   url: "#",
-  //   tags: ["RL", "MIMO", "Optimization"]
-  // },
+  {
+    id: "p2",
+    title: "ARM: Autonomous Remediation & Management with LLM Agents for Intent-Driven Control",
+    authors: "V. Avgerinos, K. Ramantas, L. Alonso, C. Verikoukis",
+    conference: "IEEE Internet of Things Journal",
+    year: 2026,
+    url: "https://ieeexplore.ieee.org/document/11316483",
+    tags: ["LLM", "AIops", "Agentic remediation"]
+  },
 ];
 
 export const PROJECTS: Project[] = [
