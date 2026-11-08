@@ -19,7 +19,7 @@ export type Book = {
 
 type CoverMatch = { coverUrl: string; sourceUrl: string; matchedTitle: string; matchedAuthor: string[] };
 
-// Photographed books confirmed finished by Bill. Unknown finish dates stay blank.
+// Books confirmed finished by Bill. Unknown finish dates stay blank.
 const catalogue: Book[] = [
   {
     "id": "the-count-of-monte-cristo",
@@ -662,6 +662,30 @@ const catalogue: Book[] = [
       9
     ],
     "spineTitle": "Η πανούκλα"
+  },
+  {
+    "id": "demons",
+    "title": "Demons",
+    "author": "Fyodor Dostoevsky",
+    "status": "finished"
+  },
+  {
+    "id": "leonardo-da-vinci",
+    "title": "Leonardo da Vinci",
+    "author": "Walter Isaacson",
+    "status": "finished"
+  },
+  {
+    "id": "the-big-short",
+    "title": "The Big Short",
+    "author": "Michael Lewis",
+    "status": "finished"
+  },
+  {
+    "id": "a-farewell-to-arms",
+    "title": "A Farewell to Arms",
+    "author": "Ernest Hemingway",
+    "status": "finished"
   }
 ];
 

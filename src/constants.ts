@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
 
   {
     id: "citely",
-    title: "Citely",
+    title: "citely.ai",
     category: "Research tools",
     status: "",
     illustration: "library",

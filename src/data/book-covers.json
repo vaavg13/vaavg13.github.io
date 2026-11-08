@@ -538,5 +538,44 @@
       "Marc Simonetti"
     ],
     "coverId": 9157544
+  },
+  "demons": {
+    "coverUrl": "/book-covers/demons.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL45429744W",
+    "matchedTitle": "Demons",
+    "matchedAuthor": [
+      "Fyodor Dostoevsky"
+    ],
+    "coverId": 15220861
+  },
+  "leonardo-da-vinci": {
+    "coverUrl": "/book-covers/leonardo-da-vinci.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL17802920W",
+    "matchedTitle": "Leonardo Da Vinci",
+    "matchedAuthor": [
+      "Walter Isaacson",
+      "Jordi Ainaud i Escudero",
+      "Beruryah Ben Barukh"
+    ],
+    "coverId": 14719954
+  },
+  "the-big-short": {
+    "coverUrl": "/book-covers/the-big-short.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL15118378W",
+    "matchedTitle": "Big Short",
+    "matchedAuthor": [
+      "Michael Lewis",
+      "Francisco José Ramos Mena"
+    ],
+    "coverId": 14445352
+  },
+  "a-farewell-to-arms": {
+    "coverUrl": "/book-covers/a-farewell-to-arms.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL63072W",
+    "matchedTitle": "A Farewell to Arms",
+    "matchedAuthor": [
+      "Ernest Hemingway"
+    ],
+    "coverId": 14914194
   }
 }

@@ -1,6 +1,6 @@
 # Photo library inventory
 
-63 distinct catalogue entries from nine photos. Bill confirmed all photographed books are finished. Finish dates are unknown. Overlapping photographs are deduplicated. Multi-volume works are one entry each; the Hitchhiker’s omnibus remains one edition.
+67 catalogue entries: 63 from nine photos and four added by Bill in a follow-up. Bill confirmed all photographed books are finished. Finish dates are unknown. Overlapping photographs are deduplicated. Multi-volume works are one entry each; the Hitchhiker’s omnibus remains one edition.
 
 English titles use the established title where identifiable. Greek spine wording is retained for reconciliation. The Heirs is a literal translation awaiting identification of its original work. The Fall and Thucydides’s History need edition checks. Cropped books with no readable identifying text are excluded.
 
@@ -69,6 +69,17 @@ English titles use the established title where identifiable. Greek spine wording
 | 61 | One Hundred Years of Solitude | Gabriel García Márquez | Εκατό χρόνια μοναξιά | 9 | — |
 | 62 | Nineteen Eighty-Four | George Orwell | 1984 | 9 | — |
 | 63 | The Plague | Albert Camus | Η πανούκλα | 8, 9 | — |
+
+## Follow-up additions
+
+Bill added these as further finished books; finish dates and physical editions are unknown.
+
+| English title | Author |
+| --- | --- |
+| Demons | Fyodor Dostoevsky |
+| Leonardo da Vinci | Walter Isaacson |
+| The Big Short | Michael Lewis |
+| A Farewell to Arms | Ernest Hemingway |
 
 ## Translation checks
 

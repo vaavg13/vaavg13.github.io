@@ -30,7 +30,7 @@ export default function ProjectGrid() {
                 {project.logo ? (
                   <img src={project.logo} alt="" width="56" height="56" />
                 ) : (
-                  <span>citely.</span>
+                  <span>citely.ai</span>
                 )}
               </div>
               <div className="product-details">
