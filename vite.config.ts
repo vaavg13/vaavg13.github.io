@@ -13,6 +13,15 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 3000,
       host: "0.0.0.0",
+      proxy: {
+        "/api/github-activity": {
+          target: "https://github-contributions-api.jogruber.de",
+          changeOrigin: true,
+          rewrite: () => "/v4/vaavg13?y=last",
+          timeout: 15000,
+          proxyTimeout: 15000,
+        },
+      },
     },
     plugins: [react(), tailwindcss()],
     define: {

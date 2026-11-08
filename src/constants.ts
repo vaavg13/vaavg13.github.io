@@ -8,7 +8,7 @@ import avatarImg from "./assets/images/profile.jpeg";
 export const PROFILE: Profile = {
   name: "Bill Avgerinos",
   title: "Founder & AI engineer",
-  tagline: "Building Skilltap and Trailblazer. Turning ideas into products.",
+  tagline: "Building Skilltap, Trailblazer, and things I find interesting.",
   affiliation: "Building from Athens",
   location: "Athens, Greece",
   avatarUrl: avatarImg,
@@ -92,11 +92,11 @@ export const PROJECTS: Project[] = [
     id: "one-realm",
     title: "One Realm",
     category: "Worldbuilding & tabletop",
-    status: "Previous work",
+    status: "",
     illustration: "world",
     logo: "/logos/one-realm.svg",
     description:
-      "Worldbuilding and tabletop tools. I worked on the product and AI-assisted play.",
+      "Worldbuilding, campaign management, and AI-assisted tabletop play.",
     tags: ["Worldbuilding", "Tabletop", "AI tools"],
     siteUrl: "https://one-realm.com",
   },
@@ -104,11 +104,11 @@ export const PROJECTS: Project[] = [
     id: "citely",
     title: "Citely",
     category: "Research tools",
-    status: "Past venture",
+    status: "",
     illustration: "library",
     logo: "/logos/citely.svg",
     description:
-      "An AI-powered academic literature platform I ran a few years back.",
+      "An academic literature platform for exploring papers and their connections with AI.",
     tags: ["Literature discovery", "Knowledge graphs", "AI"],
   },
   {

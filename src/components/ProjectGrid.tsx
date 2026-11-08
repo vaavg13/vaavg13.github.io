@@ -10,12 +10,10 @@ export default function ProjectGrid() {
     >
       <div className="product-heading">
         <div>
-          <p className="eyebrow">Products & platforms</p>
           <h2 id="projects-title">
             What I’m building<span>.</span>
           </h2>
         </div>
-        <span className="product-heading-note">Current & past work</span>
       </div>
       <div className="product-grid">
         {PROJECTS.filter((project) => project.id !== "codenames").map(
@@ -51,12 +49,12 @@ export default function ProjectGrid() {
                   )}
                 </div>
                 <p>{project.description}</p>
-                <span
-                  className={`product-state${project.id === "skilltap" || project.id === "trailblazer" ? " product-state--current" : ""}`}
-                >
-                  <span />
-                  {project.status}
-                </span>
+                {project.status && (
+                  <span className="product-state">
+                    <span />
+                    {project.status}
+                  </span>
+                )}
               </div>
             </article>
           ),

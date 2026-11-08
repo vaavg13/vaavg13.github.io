@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { ArrowUpRight, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import IllustratedLayout from "./layouts/IllustratedLayout";
 import SplitLayout from "./layouts/SplitLayout";
 import LayoutPicker, { type LayoutVariant } from "./components/LayoutPicker";
@@ -30,75 +30,48 @@ export default function App() {
     window.addEventListener("popstate", syncLayout);
     return () => window.removeEventListener("popstate", syncLayout);
   }, []);
-  const email = PROFILE.socials.find((social) => social.iconName === "mail")!;
+
+  useEffect(() => {
+    const color =
+      layout === 1
+        ? nightMode
+          ? "#143c6b"
+          : "#69a2eb"
+        : nightMode
+          ? "#182b38"
+          : "#f8f4e9";
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", color);
+  }, [layout, nightMode]);
 
   function toggleTheme() {
     const nextNightMode = !nightMode;
     document.documentElement.dataset.theme = nextNightMode ? "night" : "day";
-    document
-      .querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", nextNightMode ? "#182b38" : "#f8f4e9");
     setNightMode(nextNightMode);
   }
 
   return (
-    <div className="site">
+    <div className={`site${layout === 1 ? " site--split" : ""}`}>
       <a href="#main" className="skip-link">
         Skip to content
       </a>
-      <nav className="site-nav" aria-label="Main navigation">
-        <div className="page-width nav-inner">
-          <a
-            href="#home"
-            className="brand"
-            aria-label={`${PROFILE.name}, home`}
-          >
-            <span className="brand-symbol">
-              <Sparkle />
-            </span>
-            <span>
-              bill<span className="brand-dot">.</span>
-            </span>
-          </a>
-          <div className="nav-links">
-            <a href="#projects">Products</a>
-            <a href="#about">About</a>
-            <a href="#other">Other work</a>
-            <a href="#contact">
-              Say hello <ArrowUpRight size={15} />
-            </a>
-          </div>
-          <button
-            className="theme-button"
-            type="button"
-            onClick={toggleTheme}
-            aria-pressed={nightMode}
-            aria-label={
-              nightMode ? "Switch to day mode" : "Switch to night mode"
-            }
-            title={nightMode ? "Switch to day mode" : "Switch to night mode"}
-          >
-            {nightMode ? <Sun size={20} /> : <Moon size={19} />}
-          </button>
-        </div>
-      </nav>
+      <div className="theme-control">
+        <button
+          className="theme-button"
+          type="button"
+          onClick={toggleTheme}
+          aria-pressed={nightMode}
+          aria-label={nightMode ? "Switch to day mode" : "Switch to night mode"}
+          title={nightMode ? "Switch to day mode" : "Switch to night mode"}
+        >
+          {nightMode ? <Sun size={20} /> : <Moon size={19} />}
+        </button>
+      </div>
       <main id="main" tabIndex={-1}>
         <div key={layout}>
           {layout === 0 ? <IllustratedLayout /> : <SplitLayout />}
         </div>
-        <section
-          className="compact-contact page-width"
-          id="contact"
-          aria-labelledby="contact-title"
-        >
-          <div>
-            <p className="eyebrow">Say hello</p>
-            <h2 id="contact-title">Let’s make something.</h2>
-          </div>
-          <a href={email.url} className="button button-yellow">
-            Email me <ArrowUpRight size={20} />
-          </a>
-        </section>
       </main>
       <footer className="site-footer">
         <div className="page-width footer-inner">

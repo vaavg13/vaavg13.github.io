@@ -1907,3 +1907,334 @@ svg {
   position: absolute;
   inset: -8px 0;
 }
+
+.theme-control {
+  position: absolute;
+  top: 24px;
+  right: max(24px, calc((100vw - 1160px) / 2));
+  z-index: 20;
+}
+.theme-control .theme-button {
+  background: var(--paper);
+}
+.site--split {
+  --ink: var(--hero-ink);
+  --muted: var(--hero-muted);
+  --paper-light: color-mix(in srgb, var(--hero-top) 82%, var(--paper));
+  --line-subtle: color-mix(in srgb, var(--hero-ink) 25%, transparent);
+  background: linear-gradient(180deg, var(--hero-top), var(--hero-bottom));
+  position: relative;
+  isolation: isolate;
+}
+:root:has(.site--split),
+body:has(.site--split) {
+  background: var(--hero-top);
+}
+.site--split .theme-control .theme-button {
+  background: var(--hero-top);
+}
+.product-logo--trailblazer {
+  background: transparent;
+  border: 0;
+}
+:root[data-theme="night"] .product-logo--trailblazer img {
+  filter: brightness(0) invert(0.95);
+}
+.product-details p:last-child {
+  margin-bottom: 0;
+}
+.product-state {
+  color: var(--green);
+}
+.product-state > span {
+  background: var(--green);
+}
+.split-world {
+  position: relative;
+  isolation: isolate;
+}
+.split-layout {
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+.split-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.split-backdrop > .mountain-landscape {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  z-index: 0;
+  opacity: 0.6;
+}
+.sky-ufo,
+.sky-satellite,
+.sky-sparkle {
+  position: absolute;
+}
+.sky-ufo--large {
+  width: 125px;
+  top: 80px;
+  right: 20px;
+  transform: rotate(14deg);
+}
+.sky-ufo--small {
+  width: 76px;
+  top: 680px;
+  left: 26px;
+  transform: rotate(-18deg);
+}
+.sky-satellite {
+  width: 105px;
+  top: 390px;
+  right: 12px;
+  transform: rotate(-18deg);
+}
+.sky-sparkle {
+  color: var(--yellow);
+  width: 28px;
+}
+.sky-sparkle--one {
+  top: 330px;
+  left: 22px;
+}
+.sky-sparkle--two {
+  top: 920px;
+  right: 40px;
+  width: 20px;
+}
+.sky-sparkle--three {
+  top: 38px;
+  left: 46%;
+  width: 18px;
+}
+.sky-star {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff6de;
+  position: absolute;
+}
+.sky-star--one {
+  top: 170px;
+  left: 55px;
+}
+.sky-star--two {
+  top: 770px;
+  right: 90px;
+}
+.sky-star--three {
+  top: 520px;
+  right: 37%;
+}
+.site--split .product-card {
+  background: var(--paper-light);
+}
+.site--split .product-heading h2 span,
+.site--split .founder-profile h1 span {
+  color: var(--hero-ink);
+}
+.site--split .site-footer {
+  background: transparent;
+}
+.site--split .founder-scene {
+  margin-bottom: 14px;
+}
+.split-content .about-summary {
+  padding-bottom: 10px;
+}
+.about-summary h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.portfolio-content .other-work {
+  margin-top: 42px;
+}
+.split-content .other-work {
+  margin-top: 32px;
+}
+.site--split .about-summary {
+  padding-top: 36px;
+}
+@media (max-width: 1350px) and (min-width: 761px) {
+  .sky-ufo--large {
+    width: 100px;
+    top: 76px;
+    right: -20px;
+  }
+  .sky-satellite {
+    right: -35px;
+    width: 90px;
+  }
+  .sky-ufo--small {
+    left: -30px;
+  }
+  .sky-sparkle--one {
+    left: 8px;
+  }
+}
+@media (max-width: 760px) {
+  .theme-control {
+    top: 16px;
+    right: 20px;
+  }
+  .split-layout {
+    padding-top: 80px;
+  }
+  .founder-profile {
+    padding-bottom: 22px;
+  }
+  .founder-scene {
+    grid-row: 1 / 6;
+  }
+  .sky-ufo--large {
+    width: 64px;
+    top: 10px;
+    right: auto;
+    left: 12px;
+    transform: rotate(-10deg);
+  }
+  .sky-ufo--small {
+    width: 65px;
+    top: 800px;
+    left: -30px;
+  }
+  .sky-satellite {
+    width: 70px;
+    right: -30px;
+    top: 1240px;
+  }
+  .sky-sparkle--one {
+    top: 54px;
+    left: 45%;
+    width: 14px;
+  }
+  .sky-sparkle--two {
+    top: 680px;
+    right: 4px;
+    width: 12px;
+  }
+  .sky-sparkle--three {
+    display: none;
+  }
+  .sky-star--one {
+    left: 32%;
+    top: 22px;
+  }
+}
+
+.github-activity {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line-subtle);
+}
+.github-activity .small-section-heading {
+  margin-bottom: 18px;
+  flex-direction: row;
+  align-items: center;
+}
+.github-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 400 11px/1.5 var(--font-mono);
+  min-height: 44px;
+}
+.github-profile-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.calendar-frame {
+  min-height: 180px;
+}
+.calendar-total {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+.calendar-scroll {
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.contribution-calendar {
+  display: block;
+  width: 100%;
+  min-width: 560px;
+}
+.calendar-month {
+  font: 8px var(--font-sans);
+  fill: var(--muted);
+}
+.contribution-day--0 {
+  --day-color: color-mix(in srgb, var(--ink) 12%, transparent);
+}
+.contribution-day--1 {
+  --day-color: #54876e;
+}
+.contribution-day--2 {
+  --day-color: #78a384;
+}
+.contribution-day--3 {
+  --day-color: #a8c69b;
+}
+.contribution-day--4 {
+  --day-color: #e4e8ad;
+}
+.contribution-day {
+  fill: var(--day-color);
+}
+.legend-day {
+  background: var(--day-color);
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+}
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font: 400 9px/1.5 var(--font-mono);
+  color: var(--muted);
+  padding-top: 8px;
+}
+.calendar-legend > span:first-child {
+  margin-right: 4px;
+}
+.calendar-legend > span:last-child {
+  margin-left: 4px;
+}
+.calendar-message {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  padding-block: 40px;
+  margin: 0;
+}
+:root:not([data-theme="night"]) .contribution-day--4 {
+  --day-color: #274c3a;
+}
+:root:not([data-theme="night"]) .contribution-day--3 {
+  --day-color: #427558;
+}
+:root:not([data-theme="night"]) .contribution-day--2 {
+  --day-color: #78a384;
+}
+:root:not([data-theme="night"]) .contribution-day--1 {
+  --day-color: #b9ccac;
+}
+.portfolio-content .github-activity {
+  max-width: 820px;
+}
+@media (max-width: 760px) {
+  .github-activity {
+    margin-top: 28px;
+  }
+  .calendar-frame {
+    min-height: 150px;
+  }
+}
