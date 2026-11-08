@@ -7,7 +7,6 @@ import avatarImg from "./assets/images/profile.jpeg";
 
 export const PROFILE: Profile = {
   name: "Bill Avgerinos",
-  title: "Founder & AI engineer",
   tagline: "Building Skilltap, Trailblazer, and things I find interesting.",
   affiliation: "Building from Athens",
   location: "Athens, Greece",
@@ -19,6 +18,11 @@ export const PROFILE: Profile = {
 Outside of work, I’m building Skilltap and Trailblazer. I previously worked on One Realm and ran Citely, an academic literature platform. I like working across the product and the engineering, from shaping an idea to building the systems that make it work.`,
   focusAreas: ["Applied AI", "Knowledge systems", "Product engineering"],
   socials: [
+    {
+      platform: "X",
+      url: "https://x.com/billavge",
+      iconName: "twitter",
+    },
     {
       platform: "GitHub",
       url: "https://github.com/vaavg13",
@@ -67,6 +71,18 @@ export const PUBLICATIONS: Publication[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "one-realm",
+    title: "One Realm",
+    category: "Worldbuilding & tabletop",
+    status: "",
+    illustration: "world",
+    logo: "/logos/one-realm.svg",
+    description:
+      "Worldbuilding, campaign management, and AI-assisted tabletop play.",
+    tags: ["Worldbuilding", "Tabletop", "AI tools"],
+    siteUrl: "https://one-realm.com",
+  },
+  {
     id: "skilltap",
     title: "Skilltap",
     category: "Team knowledge",
@@ -88,18 +104,7 @@ export const PROJECTS: Project[] = [
       "Company intelligence, from registry records to useful research and lead discovery.",
     tags: ["Company data", "Data pipelines", "Applied AI"],
   },
-  {
-    id: "one-realm",
-    title: "One Realm",
-    category: "Worldbuilding & tabletop",
-    status: "",
-    illustration: "world",
-    logo: "/logos/one-realm.svg",
-    description:
-      "Worldbuilding, campaign management, and AI-assisted tabletop play.",
-    tags: ["Worldbuilding", "Tabletop", "AI tools"],
-    siteUrl: "https://one-realm.com",
-  },
+
   {
     id: "citely",
     title: "Citely",

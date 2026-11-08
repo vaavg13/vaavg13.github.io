@@ -2249,3 +2249,102 @@ body:has(.site--split) {
 .other-row > div {
   min-width: 0;
 }
+
+.split-layout {
+  --profile-width: 300px;
+  --profile-top: clamp(24px, 9vh, 90px);
+  grid-template-columns: var(--profile-width) minmax(0, 1fr);
+  padding-top: var(--profile-top);
+  padding-bottom: 56px;
+}
+.founder-column {
+  min-width: 0;
+}
+.founder-profile {
+  position: fixed;
+  top: var(--profile-top);
+  width: var(--profile-width);
+  max-height: calc(100dvh - var(--profile-top) - 24px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.product-cta {
+  margin-top: 8px;
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: 12px;
+  gap: 10px;
+}
+.social-links {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.social-links a.button {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 1.7px solid var(--line);
+  border-radius: 7px;
+  color: var(--line);
+  background: var(--yellow);
+  box-shadow: 3px 3px 0 var(--line);
+}
+.social-links a.button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--line);
+}
+@media (hover: hover) and (pointer: fine) {
+  .social-links a.button:hover {
+    background: var(--yellow);
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--line);
+  }
+}
+@media (max-width: 1050px) and (min-width: 761px) {
+  .split-layout {
+    --profile-width: 260px;
+  }
+}
+@media (max-height: 720px) and (min-width: 761px) {
+  .founder-scene {
+    height: 202px;
+  }
+  .founder-scene .portrait-postcard {
+    width: 164px;
+    left: 36px;
+  }
+  .founder-profile h1 {
+    font-size: 36px;
+  }
+  .founder-intro {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 760px) {
+  .split-layout {
+    grid-template-columns: minmax(0, 1fr);
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+  .founder-profile {
+    position: relative;
+    top: auto;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  .founder-profile .social-links {
+    grid-column: 1 / -1;
+    margin-top: 16px;
+    gap: 10px;
+  }
+  .founder-scene {
+    grid-row: 1 / 5;
+  }
+}
+.founder-profile .social-links {
+  gap: 8px;
+}

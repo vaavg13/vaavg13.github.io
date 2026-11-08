@@ -36,19 +36,18 @@ export default function ProjectGrid() {
               <div className="product-details">
                 <div className="product-title-row">
                   <h3>{project.title}</h3>
-                  {project.siteUrl && (
-                    <a
-                      href={project.siteUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="product-visit"
-                      aria-label={`Visit ${project.title}`}
-                    >
-                      <ArrowUpRight size={20} />
-                    </a>
-                  )}
                 </div>
                 <p>{project.description}</p>
+                {project.siteUrl && (
+                  <a
+                    href={project.siteUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button button-yellow product-cta"
+                  >
+                    Visit {project.title} <ArrowUpRight size={18} />
+                  </a>
+                )}
                 {project.status && (
                   <span className="product-state">
                     <span />

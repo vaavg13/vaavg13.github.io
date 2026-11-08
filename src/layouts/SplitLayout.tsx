@@ -28,36 +28,37 @@ export default function SplitLayout() {
         <MountainLandscape />
       </div>
       <div className="page-width split-layout">
-        <aside className="founder-profile" aria-label="About Bill">
-          <div className="founder-scene">
-            <figure className="portrait-postcard">
-              <div className="portrait-tape" aria-hidden="true" />
-              <div className="portrait-window">
-                <img
-                  src={PROFILE.avatarUrl}
-                  alt={`${PROFILE.name} overlooking New York City`}
-                  width="768"
-                  height="1024"
-                  fetchPriority="high"
-                />
-              </div>
-              <figcaption>
-                <span>blip blop. allegedly human.</span>
-                <Sparkle />
-              </figcaption>
-            </figure>
-          </div>
-          <h1>
-            Bill Avgerinos<span>.</span>
-          </h1>
-          <p className="founder-role">{PROFILE.title}</p>
-          <p className="founder-intro">{PROFILE.tagline}</p>
-          <p className="founder-location">
-            <MapPin size={14} />
-            {PROFILE.location}
-          </p>
-          <SocialLinks />
-        </aside>
+        <div className="founder-column">
+          <aside className="founder-profile" aria-label="About Bill">
+            <div className="founder-scene">
+              <figure className="portrait-postcard">
+                <div className="portrait-tape" aria-hidden="true" />
+                <div className="portrait-window">
+                  <img
+                    src={PROFILE.avatarUrl}
+                    alt={`${PROFILE.name} overlooking New York City`}
+                    width="768"
+                    height="1024"
+                    fetchPriority="high"
+                  />
+                </div>
+                <figcaption>
+                  <span>blip blop. allegedly human.</span>
+                  <Sparkle />
+                </figcaption>
+              </figure>
+            </div>
+            <h1>
+              Bill Avgerinos<span>.</span>
+            </h1>
+            <p className="founder-intro">{PROFILE.tagline}</p>
+            <p className="founder-location">
+              <MapPin size={14} />
+              {PROFILE.location}
+            </p>
+            <SocialLinks />
+          </aside>
+        </div>
         <div className="split-content">
           <ProjectGrid />
           <GithubActivity />

@@ -23,12 +23,25 @@ export default function SocialLinks() {
           <a
             key={social.platform}
             href={social.url}
+            className="button button-yellow"
             aria-label={social.platform}
             title={social.platform}
             target={social.iconName === "mail" ? undefined : "_blank"}
             rel={social.iconName === "mail" ? undefined : "noreferrer"}
           >
-            <Icon size={19} strokeWidth={1.8} />
+            {social.iconName === "twitter" ? (
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l8.2-9.4L.8 2h6.5l4.4 6.8L18.9 2Zm-1.1 18h1.7L6.3 3.9H4.5L17.8 20Z" />
+              </svg>
+            ) : (
+              <Icon size={19} strokeWidth={1.8} />
+            )}
           </a>
         );
       })}
