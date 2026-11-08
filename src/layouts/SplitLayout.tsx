@@ -36,9 +36,9 @@ export default function SplitLayout() {
                 <div className="portrait-window">
                   <img
                     src={PROFILE.avatarUrl}
-                    alt={`${PROFILE.name} overlooking New York City`}
+                    alt={`${PROFILE.name} smiling in mirrored sunglasses against a blue background`}
                     width="768"
-                    height="1024"
+                    height="768"
                     fetchPriority="high"
                   />
                 </div>

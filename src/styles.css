@@ -343,9 +343,7 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
-  transform: scale(2);
-  transform-origin: 100% 65%;
+  object-position: center;
 }
 .portrait-postcard figcaption {
   display: flex;

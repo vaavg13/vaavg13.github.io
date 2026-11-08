@@ -1,5 +1,5 @@
 import { Profile, Project, Publication } from "./types";
-import avatarImg from "./assets/images/profile.jpeg";
+import avatarImg from "./assets/images/profile-sunglasses.jpg";
 
 // ==========================================
 // EDIT YOUR DETAILS HERE
