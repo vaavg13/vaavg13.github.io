@@ -1,9 +1,9 @@
-# Vasilis Avgerinos
+# Bill Avgerinos
 
 Personal research and project portfolio built with React and Vite.
 
 The illustrated design uses reusable SVG artwork, a day/night palette, and
-Tailwind CSS compiled by Vite. Content lives in `src/constants.ts`; shared
+Tailwind CSS compiled by Vite. Dark mode is the default. Content lives in `src/constants.ts`; shared
 design tokens and responsive styles live in `src/styles.css`.
 
 ## Development
@@ -19,7 +19,7 @@ npm run dev
 
 - Workspace: `BILL-PERSONAL` (`bill-personal-team`)
 - Project: `vasilis-avgerinos`
-- Production: https://vasilis-avgerinos.vercel.app
+- Production: https://billavg.dev
 - Build: `npm run build`; output: `dist`; Node.js: `22.x`
 
 Production is public; preview deployments remain protected by Vercel

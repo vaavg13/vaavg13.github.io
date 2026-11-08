@@ -14,23 +14,16 @@ export default function Header() {
       </div>
       <div className="page-width hero-content">
         <div className="hero-copy">
-          <p className="eyebrow hero-eyebrow">
-            <span className="little-star" aria-hidden="true">
-              ✳
-            </span>{" "}
-            A little curiosity goes a long way
-          </p>
           <h1>
-            Vasilis
+            Bill
             <br />
             <span>
               Avgerinos<span className="name-period">.</span>
             </span>
           </h1>
-          <p className="hero-role">Researcher. Engineer. Explorer of ideas.</p>
+          <p className="hero-role">Researcher & engineer</p>
           <p className="hero-description">
-            Building intelligent systems for a world
-            <br className="hidden sm:block" /> that never stands still.
+            Agentic AI & intelligent cloud–edge systems.
           </p>
           <div className="hero-actions flex flex-wrap items-center gap-6">
             <a className="button button-yellow" href="#research">
@@ -62,14 +55,14 @@ export default function Header() {
             <div className="portrait-window">
               <img
                 src={PROFILE.avatarUrl}
-                alt="Vasilis Avgerinos overlooking New York City"
+                alt={`${PROFILE.name} overlooking New York City`}
                 width="768"
                 height="1024"
                 fetchPriority="high"
               />
             </div>
             <figcaption>
-              <span>A curious human, on planet Earth.</span>
+              <span>blip blop. allegedly human.</span>
               <Sparkle />
             </figcaption>
           </figure>
@@ -80,10 +73,6 @@ export default function Header() {
         </div>
       </div>
       <MountainLandscape />
-      <div className="hero-bottom-note">
-        <span>Good questions lead to interesting places.</span>
-        <ArrowDownRight size={16} />
-      </div>
     </header>
   );
 }

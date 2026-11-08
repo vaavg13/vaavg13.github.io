@@ -6,7 +6,7 @@ import avatarImg from './assets/images/profile.jpeg';
 // ==========================================
 
 export const PROFILE: Profile = {
-  name: "Vasilis Avgerinos",
+  name: "Bill Avgerinos",
   title: "PHD student at UPC",
   tagline: "Working on Intelligent Cloud-Edge Systems through Agentic LLM-Powered Autonomy",
   location: "Athens, Greece",

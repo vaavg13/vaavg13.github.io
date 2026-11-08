@@ -13,9 +13,9 @@ export default function ProjectGrid() {
       <div className="page-width">
         <SectionHeading
           number="03"
-          label="Out of the notebook, into the world"
-          title={<span id="projects-title">Ideas like to be built.</span>}
-          description="Experiments, side quests, and things I make to find out what happens."
+          label="Projects"
+          title={<span id="projects-title">Code & experiments.</span>}
+          description="Open-source projects and agent experiments."
         />
         <div className="project-list">
           {PROJECTS.map((project, index) => (
@@ -25,12 +25,9 @@ export default function ProjectGrid() {
                   EXPERIMENT / {String(index + 1).padStart(2, "0")}
                 </span>
                 <ArenaSketch />
-                <span className="project-art-caption">
-                  A little play. A lot to learn.
-                </span>
               </div>
               <div className="project-content">
-                <p className="eyebrow">Agents at play</p>
+                <p className="eyebrow">LLM agents</p>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="tags">

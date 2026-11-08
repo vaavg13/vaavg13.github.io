@@ -16,14 +16,8 @@ export default function PublicationList() {
         <div className="section-topline">
           <SectionHeading
             number="02"
-            label="From the research notebook"
-            title={
-              <span id="research-title">
-                Questions worth
-                <br />
-                looking into.
-              </span>
-            }
+            label="Publications"
+            title={<span id="research-title">Selected research.</span>}
             description="Selected work on intelligent, adaptive, and resilient distributed systems."
           />
           {scholar ? (

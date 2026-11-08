@@ -9,11 +9,22 @@ import { NetworkSketch, Sparkle, Ufo } from "./components/Illustrations";
 import { PROFILE } from "./constants";
 
 export default function App() {
-  const [nightMode, setNightMode] = useState(false);
+  const [nightMode, setNightMode] = useState(
+    () => document.documentElement.dataset.theme === "night",
+  );
   const email = PROFILE.socials.find((social) => social.iconName === "mail")!;
 
+  function toggleTheme() {
+    const nextNightMode = !nightMode;
+    document.documentElement.dataset.theme = nextNightMode ? "night" : "day";
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", nextNightMode ? "#182b38" : "#f8f4e9");
+    setNightMode(nextNightMode);
+  }
+
   return (
-    <div className="site" data-theme={nightMode ? "night" : "day"}>
+    <div className="site">
       <a href="#main" className="skip-link">
         Skip to content
       </a>
@@ -22,13 +33,13 @@ export default function App() {
           <a
             href="#home"
             className="brand"
-            aria-label="Vasilis Avgerinos, home"
+            aria-label={`${PROFILE.name}, home`}
           >
             <span className="brand-symbol">
               <Sparkle />
             </span>
             <span>
-              vasilis<span className="brand-dot">.</span>
+              bill<span className="brand-dot">.</span>
             </span>
           </a>
           <div className="nav-links">
@@ -42,7 +53,7 @@ export default function App() {
           <button
             className="theme-button"
             type="button"
-            onClick={() => setNightMode((value) => !value)}
+            onClick={toggleTheme}
             aria-pressed={nightMode}
             aria-label={
               nightMode ? "Switch to day mode" : "Switch to night mode"
@@ -64,21 +75,11 @@ export default function App() {
             <div>
               <SectionHeading
                 number="01"
-                label="A little context"
-                title={
-                  <span id="about-title">
-                    Research with a<br />
-                    builder’s mindset.
-                  </span>
-                }
+                label="About"
+                title={<span id="about-title">About my work.</span>}
               />
               <div className="about-sketch">
                 <NetworkSketch />
-                <span>
-                  Connecting the dots.
-                  <br />
-                  Then seeing what’s possible.
-                </span>
               </div>
             </div>
             <div className="about-copy">
@@ -108,28 +109,17 @@ export default function App() {
         >
           <div className="page-width contact-inner">
             <div className="contact-copy">
-              <p className="eyebrow">There’s always another good question</p>
+              <p className="eyebrow">Contact</p>
               <h2 id="contact-title">
-                What are you
-                <br />
-                curious about<span>?</span>
+                Get in touch<span>.</span>
               </h2>
-              <p>
-                Research, a project, or an interesting idea.
-                <br />
-                I’d love to hear what you’re thinking.
-              </p>
+              <p>For research, projects, or collaboration.</p>
               <a href={email.url} className="button button-yellow">
-                Let’s talk <ArrowUpRight size={20} />
+                Email me <ArrowUpRight size={20} />
               </a>
             </div>
             <div className="contact-illustration">
               <Ufo />
-              <span>
-                Good ideas can come
-                <br />
-                from anywhere.
-              </span>
               <Sparkle className="contact-sparkle" />
             </div>
           </div>
@@ -141,11 +131,11 @@ export default function App() {
             <span className="brand-symbol">
               <Sparkle />
             </span>
-            <span>vasilis.</span>
+            <span>bill.</span>
           </a>
           <p>
-            © {new Date().getFullYear()} Vasilis Avgerinos
-            <span>Made with curiosity, in Athens.</span>
+            © {new Date().getFullYear()} {PROFILE.name}
+            <span>{PROFILE.location}</span>
           </p>
           <SocialLinks />
         </div>

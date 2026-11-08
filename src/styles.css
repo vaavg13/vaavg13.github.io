@@ -12,7 +12,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f8f4e9;
+  background: var(--paper);
+  color: var(--ink);
+  color-scheme: light;
 }
 
 html {
@@ -22,6 +24,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  background: var(--paper);
 }
 button,
 a {
@@ -50,7 +53,7 @@ svg {
   flex-shrink: 0;
 }
 
-.site {
+:root {
   --paper: #f8f4e9;
   --paper-light: #fffdf4;
   --illustration-paper: #fff6de;
@@ -77,12 +80,15 @@ svg {
   --contact-bg: #284d3e;
   --contact-ink: #fff6db;
   --focus: #2475c1;
+}
+
+.site {
   min-height: 100dvh;
   background: var(--paper);
   color: var(--ink);
 }
 
-.site[data-theme="night"] {
+:root[data-theme="night"] {
   --paper: #182b38;
   --paper-light: #243b48;
   --paper-alt: #203644;
@@ -224,27 +230,15 @@ svg {
   z-index: 2;
   min-width: 0;
 }
-.hero-eyebrow {
-  font-size: 10px;
-  letter-spacing: 1.2px;
-}
-.little-star {
-  color: var(--yellow);
-  font-size: 28px;
-  line-height: 1;
-  -webkit-text-stroke: 0.6px var(--line);
-}
 .hero h1 {
   margin: 24px 0 24px -4px;
-  font: 800 clamp(68px, 7.4vw, 108px) / 0.91 var(--font-display);
-  letter-spacing: -6px;
+  font: 700 clamp(68px, 7.2vw, 104px) / 1.02 var(--font-sans);
+  letter-spacing: -0.055em;
   font-optical-sizing: auto;
 }
 .hero h1 > span {
   display: inline-block;
-  color: #fff5d8;
-  -webkit-text-stroke: 1.6px var(--line);
-  text-shadow: 3px 4px 0 var(--line);
+  color: var(--hero-ink);
 }
 .name-period {
   color: var(--yellow);
@@ -382,8 +376,8 @@ svg {
 .hero-ufo {
   position: absolute;
   width: 198px;
-  top: -34px;
-  right: -17px;
+  top: -70px;
+  right: -43px;
   transform: rotate(-9deg);
 }
 .hero-ufo svg {
@@ -392,8 +386,8 @@ svg {
 .hero-satellite {
   width: 128px;
   position: absolute;
-  top: 0;
-  left: -15px;
+  top: -28px;
+  left: -43px;
   transform: rotate(-11deg);
 }
 .portrait-sparkle {
@@ -438,20 +432,6 @@ svg {
   height: 233px;
   pointer-events: none;
   z-index: 1;
-}
-.hero-bottom-note {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 26px;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font: 400 9px/1.5 var(--font-mono);
-  color: var(--hero-ink);
-  letter-spacing: 0.5px;
 }
 .hero-stars {
   position: absolute;
@@ -546,11 +526,6 @@ svg {
 }
 .network-sketch {
   width: 220px;
-}
-.about-sketch > span {
-  font: 500 12px/1.6 var(--font-display);
-  color: var(--muted);
-  transform: rotate(-5deg);
 }
 .focus-areas {
   margin-block: 25px;
@@ -730,11 +705,6 @@ svg {
   max-width: 420px;
   margin: -5px auto -15px;
 }
-.project-art-caption {
-  font: 500 13px/1.5 var(--font-display);
-  align-self: flex-end;
-  transform: rotate(-3deg);
-}
 .project-content {
   padding: 43px;
   display: flex;
@@ -804,14 +774,6 @@ svg {
   width: 300px;
   margin-inline: auto;
   transform: rotate(-12deg);
-}
-.contact-illustration > span {
-  display: inline-block;
-  text-align: left;
-  font: 500 16px/1.5 var(--font-display);
-  transform: rotate(-7deg);
-  margin-top: -16px;
-  margin-left: 65px;
 }
 .contact-sparkle {
   width: 36px;
@@ -891,7 +853,7 @@ svg {
   }
   .hero h1 {
     font-size: 88px;
-    letter-spacing: -5px;
+    letter-spacing: -0.055em;
   }
   .portrait-postcard {
     width: 270px;
@@ -903,13 +865,13 @@ svg {
   }
   .hero-ufo {
     width: 175px;
-    top: -6px;
-    right: -5px;
+    top: -40px;
+    right: -24px;
   }
   .hero-satellite {
     width: 110px;
-    top: 25px;
-    left: -10px;
+    top: -3px;
+    left: -34px;
   }
   .portrait-orbit {
     width: 350px;
@@ -970,12 +932,7 @@ svg {
   }
   .hero h1 {
     font-size: 72px;
-    letter-spacing: -4px;
-  }
-  .hero-eyebrow {
-    font-size: 8px;
-    letter-spacing: 0.7px;
-    gap: 8px;
+    letter-spacing: -0.055em;
   }
   .hero-role {
     font-size: 15px;
@@ -1009,13 +966,13 @@ svg {
   }
   .hero-ufo {
     width: 150px;
-    right: -4px;
-    top: -2px;
+    right: -16px;
+    top: -32px;
   }
   .hero-satellite {
     width: 95px;
-    top: 30px;
-    left: -6px;
+    top: 2px;
+    left: -24px;
   }
   .portrait-sparkle {
     right: -2px;
@@ -1031,9 +988,6 @@ svg {
     bottom: -14px;
     left: 15px;
     font-size: 9px;
-  }
-  .hero-bottom-note {
-    font-size: 8px;
   }
   .about-grid {
     gap: 35px;
@@ -1053,10 +1007,6 @@ svg {
   }
   .about-sketch {
     display: block;
-  }
-  .about-sketch > span {
-    display: block;
-    margin-left: 25px;
   }
   .network-sketch {
     width: 210px;
@@ -1122,18 +1072,10 @@ svg {
     padding-bottom: 93px;
     gap: 10px;
   }
-  .hero-eyebrow {
-    font-size: 9px;
-    letter-spacing: 0.8px;
-  }
   .hero h1 {
     font-size: clamp(56px, 17.2vw, 96px);
     margin-block: 19px 20px;
-    letter-spacing: -4px;
-  }
-  .hero h1 > span {
-    -webkit-text-stroke-width: 1.2px;
-    text-shadow: 2px 3px 0 var(--line);
+    letter-spacing: -0.055em;
   }
   .hero-role {
     font-size: 16px;
@@ -1167,7 +1109,7 @@ svg {
   .portrait-scene {
     width: 335px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 32px auto 0;
     height: 424px;
   }
   .portrait-postcard {
@@ -1182,13 +1124,13 @@ svg {
   }
   .hero-ufo {
     width: 140px;
-    right: -4px;
-    top: -1px;
+    right: -8px;
+    top: -30px;
   }
   .hero-satellite {
     width: 100px;
-    left: 1px;
-    top: 4px;
+    left: -8px;
+    top: -20px;
   }
   .portrait-sparkle {
     right: 0;
@@ -1208,11 +1150,6 @@ svg {
     width: 170%;
     max-width: none;
     left: -35%;
-  }
-  .hero-bottom-note {
-    bottom: 22px;
-    font-size: 7px;
-    gap: 6px;
   }
   .hero-stars span:nth-child(1) {
     left: 85%;
@@ -1314,10 +1251,6 @@ svg {
   }
   .contact-illustration > svg:not(.contact-sparkle) {
     width: 230px;
-  }
-  .contact-illustration > span {
-    font-size: 14px;
-    margin-left: 30px;
   }
   .contact-sparkle {
     width: 25px;
