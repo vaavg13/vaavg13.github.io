@@ -2,6 +2,10 @@
 
 Personal research and project portfolio built with React and Vite.
 
+The illustrated design uses reusable SVG artwork, a day/night palette, and
+Tailwind CSS compiled by Vite. Content lives in `src/constants.ts`; shared
+design tokens and responsive styles live in `src/styles.css`.
+
 ## Development
 
 ```sh
