@@ -75,7 +75,7 @@ const Header: React.FC = () => {
               <img 
                 src={PROFILE.avatarUrl} 
                 alt={PROFILE.name} 
-                className="w-full h-full object-cover transition-all duration-500"
+                className="w-full h-full object-cover object-top transition-all duration-500"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   e.currentTarget.parentElement?.classList.add('flex', 'items-center', 'justify-center');
