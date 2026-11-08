@@ -44,8 +44,8 @@ export default function App() {
           </a>
           <div className="nav-links">
             <a href="#about">About</a>
-            <a href="#research">Research</a>
             <a href="#projects">Projects</a>
+            <a href="#research">Publications</a>
             <a href="#contact">
               Say hello <ArrowUpRight size={15} />
             </a>
@@ -83,25 +83,24 @@ export default function App() {
               </div>
             </div>
             <div className="about-copy">
-              <p className="about-lead">
-                I explore how intelligent systems can make complex
-                infrastructure more adaptive, autonomous, and resilient.
-              </p>
-              <p>{PROFILE.about}</p>
+              <p className="about-lead">{PROFILE.aboutLead}</p>
+              {PROFILE.about.split("\n\n").map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
               <div className="focus-areas">
                 <p className="eyebrow">Currently exploring</p>
                 <div className="tags">
-                  <span>Agentic AI</span>
-                  <span>Cloud–edge systems</span>
-                  <span>Autonomous management</span>
+                  {PROFILE.focusAreas.map((area) => (
+                    <span key={area}>{area}</span>
+                  ))}
                 </div>
               </div>
               <SocialLinks />
             </div>
           </div>
         </section>
-        <PublicationList />
         <ProjectGrid />
+        <PublicationList />
         <section
           className="contact-section"
           id="contact"
@@ -113,7 +112,7 @@ export default function App() {
               <h2 id="contact-title">
                 Get in touch<span>.</span>
               </h2>
-              <p>For research, projects, or collaboration.</p>
+              <p>For projects, products, or collaboration.</p>
               <a href={email.url} className="button button-yellow">
                 Email me <ArrowUpRight size={20} />
               </a>

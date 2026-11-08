@@ -1,6 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { PROJECTS } from "../constants";
-import { ArenaSketch } from "./Illustrations";
+import ProjectIllustration from "./ProjectIllustration";
 import SectionHeading from "./SectionHeading";
 
 export default function ProjectGrid() {
@@ -12,52 +12,58 @@ export default function ProjectGrid() {
     >
       <div className="page-width">
         <SectionHeading
-          number="03"
-          label="Projects"
-          title={<span id="projects-title">Code & experiments.</span>}
-          description="Open-source projects and agent experiments."
+          number="02"
+          label="Selected work"
+          title={<span id="projects-title">Products & platforms.</span>}
+          description="What I’m building now, and things I’ve worked on before."
         />
         <div className="project-list">
-          {PROJECTS.map((project, index) => (
-            <article className="project-card" key={project.id}>
+          {PROJECTS.map((project) => (
+            <article
+              className={`project-card${project.illustration === "arena" ? " project-card--wide" : ""}`}
+              key={project.id}
+              data-project={project.id}
+            >
               <div className="project-illustration">
-                <span className="project-index">
-                  EXPERIMENT / {String(index + 1).padStart(2, "0")}
-                </span>
-                <ArenaSketch />
+                <span className="project-index">{project.category}</span>
+                <ProjectIllustration kind={project.illustration} />
               </div>
               <div className="project-content">
-                <p className="eyebrow">LLM agents</p>
+                <span className="project-status">{project.status}</span>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="tags">
-                  {project.techStack.map((tech) => (
-                    <span key={tech}>{tech}</span>
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
                   ))}
                 </div>
-                <div className="flex flex-wrap items-center gap-6 mt-8">
-                  {project.repoUrl ? (
-                    <a
-                      href={project.repoUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="button button-ink"
-                    >
-                      <Github size={17} /> Explore the code{" "}
-                      <ArrowUpRight size={18} />
-                    </a>
-                  ) : null}
-                  {project.demoUrl ? (
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-link"
-                    >
-                      Try the demo <ArrowUpRight size={18} />
-                    </a>
-                  ) : null}
-                </div>
+                {project.siteUrl || project.repoUrl ? (
+                  <div className="project-links flex flex-wrap items-center gap-6">
+                    {project.siteUrl ? (
+                      <a
+                        href={project.siteUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="button button-ink"
+                      >
+                        Visit {project.title}
+                        <ArrowUpRight size={18} />
+                      </a>
+                    ) : null}
+                    {project.repoUrl ? (
+                      <a
+                        href={project.repoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="button button-ink"
+                      >
+                        <Github size={17} />
+                        Explore the code
+                        <ArrowUpRight size={18} />
+                      </a>
+                    ) : null}
+                  </div>
+                ) : null}
               </div>
             </article>
           ))}

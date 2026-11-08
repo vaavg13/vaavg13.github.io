@@ -1,13 +1,16 @@
 export interface SocialLink {
   platform: string;
   url: string;
-  iconName: 'github' | 'linkedin' | 'mail' | 'scholar' | 'twitter';
+  iconName: "github" | "linkedin" | "mail" | "scholar" | "twitter";
 }
 
 export interface Profile {
   name: string;
   title: string;
   tagline: string;
+  affiliation: string;
+  aboutLead: string;
+  focusAreas: string[];
   about: string;
   location: string;
   avatarUrl: string;
@@ -27,9 +30,11 @@ export interface Publication {
 export interface Project {
   id: string;
   title: string;
+  category: string;
+  status: string;
+  illustration: "memory" | "companies" | "world" | "library" | "arena";
   description: string;
-  techStack: string[];
-  imageUrl?: string;
+  tags: string[];
+  siteUrl?: string;
   repoUrl?: string;
-  demoUrl?: string;
 }

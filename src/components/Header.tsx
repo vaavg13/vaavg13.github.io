@@ -21,12 +21,10 @@ export default function Header() {
               Avgerinos<span className="name-period">.</span>
             </span>
           </h1>
-          <p className="hero-role">Researcher & engineer</p>
-          <p className="hero-description">
-            Agentic AI & intelligent cloud–edge systems.
-          </p>
+          <p className="hero-role">{PROFILE.title}</p>
+          <p className="hero-description">{PROFILE.tagline}</p>
           <div className="hero-actions flex flex-wrap items-center gap-6">
-            <a className="button button-yellow" href="#research">
+            <a className="button button-yellow" href="#projects">
               Explore my work <ArrowDownRight size={20} />
             </a>
             <a
@@ -40,7 +38,7 @@ export default function Header() {
           </div>
           <p className="hero-affiliation">
             <span className="status-dot" />
-            PhD researcher · UPC & Athena Research Center
+            {PROFILE.affiliation}
           </p>
         </div>
         <div className="portrait-scene">

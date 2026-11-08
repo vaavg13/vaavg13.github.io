@@ -1,6 +1,6 @@
 # Bill Avgerinos
 
-Personal research and project portfolio built with React and Vite.
+Personal AI engineering and product portfolio built with React and Vite.
 
 The illustrated design uses reusable SVG artwork, a day/night palette, and
 Tailwind CSS compiled by Vite. Dark mode is the default. Content lives in `src/constants.ts`; shared

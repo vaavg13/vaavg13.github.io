@@ -1,5 +1,5 @@
-import { Profile, Project, Publication } from './types';
-import avatarImg from './assets/images/profile.jpeg';
+import { Profile, Project, Publication } from "./types";
+import avatarImg from "./assets/images/profile.jpeg";
 
 // ==========================================
 // EDIT YOUR DETAILS HERE
@@ -7,63 +7,115 @@ import avatarImg from './assets/images/profile.jpeg';
 
 export const PROFILE: Profile = {
   name: "Bill Avgerinos",
-  title: "PHD student at UPC",
-  tagline: "Working on Intelligent Cloud-Edge Systems through Agentic LLM-Powered Autonomy",
+  title: "AI Engineer",
+  tagline: "Building AI-powered products and knowledge systems.",
+  affiliation: "Currently at Tapforce",
   location: "Athens, Greece",
   avatarUrl: avatarImg,
-  about: `I am a researcher in AI-driven cloud–edge systems, currently advancing my PhD work at Athena Research Center & Universitat Politècnica de Catalunya (UPC). My research focuses on agentic LLM-powered systems for adaptive and resilient distributed deployments, particularly in intent-based and SLA-aware management. Beyond collaborative research, I actively pursue personal AI projects, including PEFT methods for Transformer-based models. Additionally, I have designed systems to improve performance in tasks like research indexing and knowledge extraction, structuring scientific content to enable more efficient access and retrieval by LLMs.`,
+  aboutLead:
+    "I’m an AI Engineer at Tapforce, building AI systems for education and knowledge work.",
+  about: `My work spans book ingestion, semantic indexing, and retrieval, alongside tools that turn educational content into slides, videos, and interactive learning experiences.
+
+Outside of work, I’m building Skilltap and Trailblazer. I previously worked on One Realm and ran Citely, an academic literature platform. I like working across the product and the engineering, from shaping an idea to building the systems that make it work.`,
+  focusAreas: ["Applied AI", "Knowledge systems", "Product engineering"],
   socials: [
-    { platform: "GitHub", url: "https://github.com/vaavg13", iconName: "github" },
-    { platform: "LinkedIn", url: "https://www.linkedin.com/in/vasilis-avgerinos-09468425a/", iconName: "linkedin" },
-    { platform: "Google Scholar", url: "https://scholar.google.com/citations?user=ZypVDRAAAAAJ&hl=en", iconName: "scholar" },
-    { platform: "Email", url: "mailto:x.v.avgerinos@gmail.com", iconName: "mail" },
-  ]
+    {
+      platform: "GitHub",
+      url: "https://github.com/vaavg13",
+      iconName: "github",
+    },
+    {
+      platform: "LinkedIn",
+      url: "https://www.linkedin.com/in/vasilis-avgerinos-09468425a/",
+      iconName: "linkedin",
+    },
+    {
+      platform: "Google Scholar",
+      url: "https://scholar.google.com/citations?user=ZypVDRAAAAAJ&hl=en",
+      iconName: "scholar",
+    },
+    {
+      platform: "Email",
+      url: "mailto:x.v.avgerinos@gmail.com",
+      iconName: "mail",
+    },
+  ],
 };
 
 export const PUBLICATIONS: Publication[] = [
   {
     id: "p1",
-    title: "Workload Prediction for Volatile Nodes in Multi-Access Edge Networks",
+    title:
+      "Workload Prediction for Volatile Nodes in Multi-Access Edge Networks",
     authors: "V. Avgerinos, K. Ramantas, A. Ksentini, L. Alonso, C. Verikoukis",
     conference: "IEEE ICC 2025",
     year: 2025,
     url: "https://ieeexplore.ieee.org/abstract/document/11162043",
-    tags: ["GNN","Time series Forecasting", "6G"]
+    tags: ["GNN", "Time series Forecasting", "6G"],
   },
   {
     id: "p2",
-    title: "ARM: Autonomous Remediation & Management with LLM Agents for Intent-Driven Control",
+    title:
+      "ARM: Autonomous Remediation & Management with LLM Agents for Intent-Driven Control",
     authors: "V. Avgerinos, K. Ramantas, L. Alonso, C. Verikoukis",
     conference: "IEEE Internet of Things Journal",
     year: 2026,
     url: "https://ieeexplore.ieee.org/document/11316483",
-    tags: ["LLM", "AIops", "Agentic remediation"]
+    tags: ["LLM", "AIops", "Agentic remediation"],
   },
 ];
 
 export const PROJECTS: Project[] = [
   {
-    id: "prj1",
-    title: "Code Names LLM Arena",
-    description: "Namesbench evaluates a pair of LangChain agents (spymaster + player) that play a Codenames-style game using Dixit artwork. The objective is to reveal every friendly card in as few rounds as possible while avoiding opponent hits.",
-    techStack: ["Python", "Langchain"],
-    repoUrl: "https://github.com/vaavg13/codenames-llm-arena",
-    imageUrl: "#"
+    id: "skilltap",
+    title: "Skilltap",
+    category: "Team knowledge",
+    status: "Coming soon",
+    illustration: "memory",
+    description:
+      "Shared memory for teams working with AI agents. I’m building a way to turn useful corrections, decisions, and lessons into reusable knowledge, so teammates and their agents don’t keep relearning the same things.",
+    tags: ["AI agents", "Team memory", "Developer tools"],
   },
-  // {
-  //   id: "prj2",
-  //   title: "LLM-Net-Optimizer",
-  //   description: "An agentic workflow using Gemini 1.5 Pro to automatically tune network parameters based on log anomaly detection.",
-  //   techStack: ["TypeScript", "LangChain", "Gemini API"],
-  //   repoUrl: "https://github.com",
-  //   imageUrl: "https://picsum.photos/601/400"
-  // },
-  // {
-  //   id: "prj3",
-  //   title: "SignalGAN",
-  //   description: "Generating realistic channel state information (CSI) datasets using Generative Adversarial Networks for training robust channel estimators.",
-  //   techStack: ["TensorFlow", "GANs", "MATLAB"],
-  //   repoUrl: "https://github.com",
-  //   imageUrl: "https://picsum.photos/602/400"
-  // }
+  {
+    id: "trailblazer",
+    title: "Trailblazer",
+    category: "Company intelligence",
+    status: "Under development",
+    illustration: "companies",
+    description:
+      "Company research and lead discovery built around registry data, financial information, and the connections between companies and people. I’m working on turning scattered records into evidence-backed company profiles and useful research workflows.",
+    tags: ["Company data", "Data pipelines", "Applied AI"],
+  },
+  {
+    id: "one-realm",
+    title: "One Realm",
+    category: "Worldbuilding & tabletop",
+    status: "Previous work",
+    illustration: "world",
+    description:
+      "A platform for building and running tabletop worlds, bringing together campaign lore, characters, maps, and a virtual tabletop. I worked on the product and the systems behind world management and AI-assisted play.",
+    tags: ["Worldbuilding", "Tabletop", "AI tools"],
+    siteUrl: "https://one-realm.com",
+  },
+  {
+    id: "citely",
+    title: "Citely",
+    category: "Research tools",
+    status: "Past venture",
+    illustration: "library",
+    description:
+      "An academic literature platform I ran a few years back, focused on helping researchers organize papers, explore connections between them, and understand scientific work using AI.",
+    tags: ["Literature discovery", "Knowledge graphs", "AI"],
+  },
+  {
+    id: "codenames",
+    title: "Code Names LLM Arena",
+    category: "Open-source experiment",
+    status: "Open source",
+    illustration: "arena",
+    description:
+      "A Codenames-style game where a pair of LLM agents play spymaster and guesser using Dixit artwork. An experiment in agent communication, reasoning, and coordination.",
+    tags: ["Python", "LangChain", "Multi-agent systems"],
+    repoUrl: "https://github.com/vaavg13/codenames-llm-arena",
+  },
 ];
