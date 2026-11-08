@@ -1,0 +1,542 @@
+{
+  "the-count-of-monte-cristo": {
+    "coverUrl": "/book-covers/the-count-of-monte-cristo.jpg",
+    "sourceUrl": "https://www.penguin.co.uk/books/35482/the-count-of-monte-cristo-by-alexandre-dumas-trans--robin-buss-intro--robin-buss/9780140449266",
+    "matchedTitle": "The Count of Monte Cristo",
+    "matchedAuthor": [
+      "Alexandre Dumas"
+    ],
+    "isbn": "9780140449266",
+    "selectionNote": "Representative Penguin Classics edition verified against publisher; not the photographed edition."
+  },
+  "listen-little-man": {
+    "coverUrl": "/book-covers/listen-little-man.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1992669W",
+    "matchedTitle": "Listen, little man!",
+    "matchedAuthor": [
+      "Wilhelm Reich"
+    ],
+    "coverId": 224569
+  },
+  "the-passions-and-the-interests": {
+    "coverUrl": "/book-covers/the-passions-and-the-interests.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL2745859W",
+    "matchedTitle": "The passions and the interests",
+    "matchedAuthor": [
+      "Albert Otto Hirschman"
+    ],
+    "coverId": 440103
+  },
+  "connected": {
+    "coverUrl": "/book-covers/connected.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL8027318W",
+    "matchedTitle": "Connected",
+    "matchedAuthor": [
+      "Nicholas A. Christakis",
+      "James H. Fowler"
+    ],
+    "coverId": 6767497
+  },
+  "the-selfish-gene": {
+    "coverUrl": "/book-covers/the-selfish-gene.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1966488W",
+    "matchedTitle": "The Selfish Gene",
+    "matchedAuthor": [
+      "Richard Dawkins"
+    ],
+    "coverId": 133936
+  },
+  "crime-and-punishment": {
+    "coverUrl": "/book-covers/crime-and-punishment.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL45018229W",
+    "matchedTitle": "Crime and Punishment",
+    "matchedAuthor": [
+      "Fyodor Dostoevsky"
+    ],
+    "coverId": 15183762
+  },
+  "look-homeward-angel": {
+    "coverUrl": "/book-covers/look-homeward-angel.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL276141W",
+    "matchedTitle": "Look Homeward, Angel",
+    "matchedAuthor": [
+      "Thomas Wolfe"
+    ],
+    "coverId": 475567
+  },
+  "the-trial": {
+    "coverUrl": "/book-covers/the-trial.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL43043884W",
+    "matchedTitle": "The Trial",
+    "matchedAuthor": [
+      "Franz Kafka"
+    ],
+    "coverId": 14910748
+  },
+  "for-whom-the-bell-tolls": {
+    "coverUrl": "/book-covers/for-whom-the-bell-tolls.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL63009W",
+    "matchedTitle": "For Whom the Bell Tolls",
+    "matchedAuthor": [
+      "Ernest Hemingway"
+    ],
+    "coverId": 2560810
+  },
+  "the-old-man-and-the-sea": {
+    "coverUrl": "/book-covers/the-old-man-and-the-sea.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL63073W",
+    "matchedTitle": "The Old Man and the Sea",
+    "matchedAuthor": [
+      "Ernest Hemingway"
+    ],
+    "coverId": 463307
+  },
+  "the-sun-also-rises": {
+    "coverUrl": "/book-covers/the-sun-also-rises.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL62979W",
+    "matchedTitle": "The Sun Also Rises",
+    "matchedAuthor": [
+      "Ernest Hemingway"
+    ],
+    "coverId": 78741
+  },
+  "siddhartha": {
+    "coverUrl": "/book-covers/siddhartha.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL872932W",
+    "matchedTitle": "Siddhartha",
+    "matchedAuthor": [
+      "Hermann Hesse"
+    ],
+    "coverId": 6562535
+  },
+  "the-dragon-and-the-foreign-devils": {
+    "coverUrl": "/book-covers/the-dragon-and-the-foreign-devils.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL8400184W",
+    "matchedTitle": "The Dragon and the Foreign Devils",
+    "matchedAuthor": [
+      "Harry G. Gelber"
+    ],
+    "coverId": 1512072
+  },
+  "the-prince": {
+    "coverUrl": "/book-covers/the-prince.jpg",
+    "sourceUrl": "https://www.penguinrandomhouse.com/books/531158/the-prince-by-niccolo-machiavelli/",
+    "matchedTitle": "The Prince",
+    "matchedAuthor": [
+      "Niccolò Machiavelli"
+    ],
+    "isbn": "9780140449150",
+    "selectionNote": "Representative Penguin Classics edition verified against publisher; not the photographed edition."
+  },
+  "the-great-gatsby": {
+    "coverUrl": "/book-covers/the-great-gatsby.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL468431W",
+    "matchedTitle": "The Great Gatsby",
+    "matchedAuthor": [
+      "F. Scott Fitzgerald"
+    ],
+    "coverId": 10590366
+  },
+  "utopia-for-realists": {
+    "coverUrl": "/book-covers/utopia-for-realists.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL27689776W",
+    "matchedTitle": "Utopia for Realists",
+    "matchedAuthor": [
+      "Rutger Bregman"
+    ],
+    "coverId": 12684144
+  },
+  "brief-answers-to-the-big-questions": {
+    "coverUrl": "/book-covers/brief-answers-to-the-big-questions.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL19552275W",
+    "matchedTitle": "Brief Answers to the Big Questions",
+    "matchedAuthor": [
+      "Stephen Hawking"
+    ],
+    "coverId": 8815165
+  },
+  "thinking-fast-and-slow": {
+    "coverUrl": "/book-covers/thinking-fast-and-slow.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL15992072W",
+    "matchedTitle": "Thinking, Fast and Slow",
+    "matchedAuthor": [
+      "Daniel Kahneman"
+    ],
+    "coverId": 13290711
+  },
+  "zero-to-one": {
+    "coverUrl": "/book-covers/zero-to-one.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL17078706W",
+    "matchedTitle": "Zero to One",
+    "matchedAuthor": [
+      "Peter A. Thiel",
+      "Blake Masters"
+    ],
+    "coverId": 9002334
+  },
+  "supercommunicators": {
+    "coverUrl": "/book-covers/supercommunicators.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL37564042W",
+    "matchedTitle": "Supercommunicators",
+    "matchedAuthor": [
+      "Charles Duhigg"
+    ],
+    "coverId": 14591638
+  },
+  "how-to-win-friends-and-influence-people": {
+    "coverUrl": "/book-covers/how-to-win-friends-and-influence-people.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1063267W",
+    "matchedTitle": "How to Win Friends and Influence People",
+    "matchedAuthor": [
+      "Dale Carnegie"
+    ],
+    "coverId": 13314878
+  },
+  "eugenie-grandet": {
+    "coverUrl": "/book-covers/eugenie-grandet.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL85243W",
+    "matchedTitle": "Eugénie Grandet",
+    "matchedAuthor": [
+      "Honoré de Balzac"
+    ],
+    "coverId": 8237025
+  },
+  "a-thousand-brains": {
+    "coverUrl": "/book-covers/a-thousand-brains.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL24217597W",
+    "matchedTitle": "A Thousand Brains",
+    "matchedAuthor": [
+      "Jeff Hawkins"
+    ],
+    "coverId": 10675398
+  },
+  "a-short-history-of-europe": {
+    "coverUrl": "/book-covers/a-short-history-of-europe.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL20516673W",
+    "matchedTitle": "A Short History of Europe",
+    "matchedAuthor": [
+      "Simon Jenkins"
+    ],
+    "coverId": 9167516
+  },
+  "the-vital-question": {
+    "coverUrl": "/book-covers/the-vital-question.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL19663289W",
+    "matchedTitle": "The vital question",
+    "matchedAuthor": [
+      "Nick Lane"
+    ],
+    "coverId": 10014850
+  },
+  "cant-hurt-me": {
+    "coverUrl": "/book-covers/cant-hurt-me.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL18108064W",
+    "matchedTitle": "Can't Hurt Me",
+    "matchedAuthor": [
+      "David Goggins"
+    ],
+    "coverId": 8305903
+  },
+  "the-power-of-habit": {
+    "coverUrl": "/book-covers/the-power-of-habit.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL16015154W",
+    "matchedTitle": "The Power of Habit",
+    "matchedAuthor": [
+      "Charles Duhigg"
+    ],
+    "coverId": 9078085
+  },
+  "a-tale-of-two-cities": {
+    "coverUrl": "/book-covers/a-tale-of-two-cities.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL8193465W",
+    "matchedTitle": "A Tale of Two Cities",
+    "matchedAuthor": [
+      "Charles Dickens"
+    ],
+    "coverId": 13301713
+  },
+  "les-miserables": {
+    "coverUrl": "/book-covers/les-miserables.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1063588W",
+    "matchedTitle": "Les Misérables",
+    "matchedAuthor": [
+      "Victor Hugo"
+    ],
+    "coverId": 12721865
+  },
+  "animal-farm": {
+    "coverUrl": "/book-covers/animal-farm.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1168007W",
+    "matchedTitle": "Animal Farm",
+    "matchedAuthor": [
+      "George Orwell"
+    ],
+    "coverId": 11261770
+  },
+  "demian": {
+    "coverUrl": "/book-covers/demian.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL30457295W",
+    "matchedTitle": "Demian",
+    "matchedAuthor": [
+      "Hermann Hesse"
+    ],
+    "coverId": 12569297
+  },
+  "foundation": {
+    "coverUrl": "/book-covers/foundation.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL46125W",
+    "matchedTitle": "Foundation",
+    "matchedAuthor": [
+      "Isaac Asimov"
+    ],
+    "coverId": 14612610
+  },
+  "foundation-and-empire": {
+    "coverUrl": "/book-covers/foundation-and-empire.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL46224W",
+    "matchedTitle": "Foundation and Empire",
+    "matchedAuthor": [
+      "Isaac Asimov"
+    ],
+    "coverId": 9300695
+  },
+  "second-foundation": {
+    "coverUrl": "/book-covers/second-foundation.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL46309W",
+    "matchedTitle": "Second Foundation",
+    "matchedAuthor": [
+      "Isaac Asimov"
+    ],
+    "coverId": 9261324
+  },
+  "elon-musk": {
+    "coverUrl": "/book-covers/elon-musk.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL35720357W",
+    "matchedTitle": "Elon Musk",
+    "matchedAuthor": [
+      "Walter Isaacson"
+    ],
+    "coverId": 14420016
+  },
+  "sapiens": {
+    "coverUrl": "/book-covers/sapiens.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL17075811W",
+    "matchedTitle": "Sapiens",
+    "matchedAuthor": [
+      "Yuval Noah Harari"
+    ],
+    "coverId": 8634250
+  },
+  "to-the-edge-of-the-world": {
+    "coverUrl": "/book-covers/to-the-edge-of-the-world.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL17725338W",
+    "matchedTitle": "To the edge of the world",
+    "matchedAuthor": [
+      "Christian Wolmar"
+    ],
+    "coverId": 8002413
+  },
+  "permanent-record": {
+    "coverUrl": "/book-covers/permanent-record.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL20080323W",
+    "matchedTitle": "Permanent Record",
+    "matchedAuthor": [
+      "Edward Snowden"
+    ],
+    "coverId": 8751316
+  },
+  "material-world": {
+    "coverUrl": "/book-covers/material-world.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL29046628W",
+    "matchedTitle": "Material World",
+    "matchedAuthor": [
+      "Ed Conway"
+    ],
+    "coverId": 14591884
+  },
+  "the-coming-wave": {
+    "coverUrl": "/book-covers/the-coming-wave.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL36525720W",
+    "matchedTitle": "The Coming Wave",
+    "matchedAuthor": [
+      "Mustafa Suleyman"
+    ],
+    "coverId": 14421031
+  },
+  "don-quixote": {
+    "coverUrl": "/book-covers/don-quixote.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL26799707W",
+    "matchedTitle": "Don Quixote",
+    "matchedAuthor": [
+      "Miguel de Cervantes Saavedra"
+    ],
+    "coverId": 13846974
+  },
+  "of-mice-and-men": {
+    "coverUrl": "/book-covers/of-mice-and-men.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL23204W",
+    "matchedTitle": "Of Mice and Men",
+    "matchedAuthor": [
+      "John Steinbeck"
+    ],
+    "coverId": 14319003
+  },
+  "east-of-eden": {
+    "coverUrl": "/book-covers/east-of-eden.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL23166W",
+    "matchedTitle": "East of Eden",
+    "matchedAuthor": [
+      "John Steinbeck"
+    ],
+    "coverId": 11386937
+  },
+  "the-ultimate-hitchhikers-guide-to-the-galaxy": {
+    "coverUrl": "/book-covers/the-ultimate-hitchhikers-guide-to-the-galaxy.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL25125779W",
+    "matchedTitle": "The Ultimate Hitchhiker's Guide to the Galaxy",
+    "matchedAuthor": [
+      "Douglas Adams"
+    ],
+    "coverId": 11972784
+  },
+  "one-hundred-years-of-solitude": {
+    "coverUrl": "/book-covers/one-hundred-years-of-solitude.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL29355621W",
+    "matchedTitle": "One Hundred Years of Solitude",
+    "matchedAuthor": [
+      "Gregory Rabassa",
+      "Gabriel García Márquez"
+    ],
+    "coverId": 15272476
+  },
+  "nineteen-eighty-four": {
+    "coverUrl": "/book-covers/nineteen-eighty-four.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1168083W",
+    "matchedTitle": "Nineteen Eighty-Four",
+    "matchedAuthor": [
+      "George Orwell"
+    ],
+    "coverId": 9267242
+  },
+  "the-brothers-karamazov": {
+    "coverUrl": "/book-covers/the-brothers-karamazov.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL24600223W",
+    "matchedTitle": "The Brothers Karamazov",
+    "matchedAuthor": [
+      "Фёдор Михайлович Достоевский",
+      "Constance Garrett"
+    ],
+    "coverId": 11263774
+  },
+  "the-house-of-the-dead": {
+    "coverUrl": "/book-covers/the-house-of-the-dead.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL166970W",
+    "matchedTitle": "The house of the dead",
+    "matchedAuthor": [
+      "Fiódor Dostoievski"
+    ],
+    "coverId": 15148639
+  },
+  "notes-from-underground": {
+    "coverUrl": "/book-covers/notes-from-underground.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL21025633W",
+    "matchedTitle": "Notes from the underground",
+    "matchedAuthor": [
+      "Fiódor Dostoievski"
+    ],
+    "coverId": 13279632
+  },
+  "the-idiot": {
+    "coverUrl": "/book-covers/the-idiot.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL166925W",
+    "matchedTitle": "The Idiot",
+    "matchedAuthor": [
+      "Fiódor Dostoievski"
+    ],
+    "coverId": 15166240
+  },
+  "the-gambler": {
+    "coverUrl": "/book-covers/the-gambler.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL166923W",
+    "matchedTitle": "The Gambler",
+    "matchedAuthor": [
+      "Fiódor Dostoievski"
+    ],
+    "coverId": 12622043
+  },
+  "principles-life-and-work": {
+    "coverUrl": "/book-covers/principles-life-and-work.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL18147675W",
+    "matchedTitle": "Principles",
+    "matchedAuthor": [
+      "Ray Dalio"
+    ],
+    "coverId": 14839594
+  },
+  "the-metamorphosis": {
+    "coverUrl": "/book-covers/the-metamorphosis.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL498556W",
+    "matchedTitle": "Metamorphosis",
+    "matchedAuthor": [
+      "Franz Kafka"
+    ],
+    "coverId": 15200982
+  },
+  "the-myth-of-sisyphus": {
+    "coverUrl": "/book-covers/the-myth-of-sisyphus.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1230601W",
+    "matchedTitle": "The Myth of Sisyphus",
+    "matchedAuthor": [
+      "Albert Camus"
+    ],
+    "coverId": 8824673
+  },
+  "the-dark-forest": {
+    "coverUrl": "/book-covers/the-dark-forest.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL16314245W",
+    "matchedTitle": "The Dark Forest",
+    "matchedAuthor": [
+      "刘慈欣"
+    ],
+    "coverId": 10526598
+  },
+  "deaths-end": {
+    "coverUrl": "/book-covers/deaths-end.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL17610507W",
+    "matchedTitle": "Death's end",
+    "matchedAuthor": [
+      "刘慈欣"
+    ],
+    "coverId": 10246599
+  },
+  "the-plague": {
+    "coverUrl": "/book-covers/the-plague.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL1230715W",
+    "matchedTitle": "The Plague",
+    "matchedAuthor": [
+      "Albert Camus"
+    ],
+    "coverId": 15038781
+  },
+  "symposium": {
+    "coverUrl": "/book-covers/symposium.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL51815W",
+    "matchedTitle": "The Symposium of Plato",
+    "matchedAuthor": [
+      "Plato"
+    ],
+    "coverId": 14406600
+  },
+  "the-three-body-problem": {
+    "coverUrl": "/book-covers/the-three-body-problem.jpg",
+    "sourceUrl": "https://openlibrary.org/works/OL17267881W",
+    "matchedTitle": "The Three-Body Problem",
+    "matchedAuthor": [
+      "刘慈欣",
+      "Vincent Schmitt",
+      "Gwennaël Gaffric",
+      "Marc Simonetti"
+    ],
+    "coverId": 9157544
+  }
+}

@@ -15,6 +15,22 @@ npm run dev
 
 `npm run build` generates the site in `dist`.
 
+## Bookshelf
+
+The reading page lives at `/books/`, linked from the Reading card on the home page. Edit `src/books.ts`
+to add books with a unique `id`, `title`, `author`, and `status` (`reading`,
+`finished`, or `up-next`). Optional fields are `finishedOn` (`YYYY-MM-DD`),
+`note`, `coverUrl`, and `url`. Finished books appear newest first, with undated
+books at the end. The initial 63 entries come from Bill’s library photos and are
+confirmed finished; unknown dates stay blank. `docs/books-photo-inventory.md`
+keeps the English/Greek title mapping, photo references, and unresolved details.
+
+`python3 scripts/lookup-book-covers.py` caches missing Open Library thumbnails
+in `public/book-covers/` and records matches in `src/data/book-covers.json`.
+Review `docs/book-cover-review.json` for unmatched titles. The page falls back
+to a title thumbnail when a cover is unavailable. Covers can represent different
+editions from the photographed copies.
+
 ## Vercel
 
 - Workspace: `BILL-PERSONAL` (`bill-personal-team`)

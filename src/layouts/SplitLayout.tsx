@@ -1,32 +1,18 @@
 import { MapPin } from "lucide-react";
 import { PROFILE } from "../constants";
-import {
-  MountainLandscape,
-  Satellite,
-  Sparkle,
-  Ufo,
-} from "../components/Illustrations";
+import { Sparkle } from "../components/Illustrations";
+import SiteBackdrop from "../components/SiteBackdrop";
 import SocialLinks from "../components/SocialLinks";
 import ProjectGrid from "../components/ProjectGrid";
 import GithubActivity from "../components/GithubActivity";
 import AboutSummary from "../components/AboutSummary";
 import PublicationList from "../components/PublicationList";
+import ReadingCard from "../components/ReadingCard";
 
 export default function SplitLayout() {
   return (
     <div className="split-world" id="home">
-      <div className="split-backdrop" aria-hidden="true">
-        <Ufo className="sky-ufo sky-ufo--large" />
-        <Ufo className="sky-ufo sky-ufo--small" />
-        <Satellite className="sky-satellite" />
-        <Sparkle className="sky-sparkle sky-sparkle--one" />
-        <Sparkle className="sky-sparkle sky-sparkle--two" />
-        <Sparkle className="sky-sparkle sky-sparkle--three" />
-        <span className="sky-star sky-star--one" />
-        <span className="sky-star sky-star--two" />
-        <span className="sky-star sky-star--three" />
-        <MountainLandscape />
-      </div>
+      <SiteBackdrop />
       <div className="page-width split-layout">
         <div className="founder-column">
           <aside className="founder-profile" aria-label="About Bill">
@@ -63,7 +49,10 @@ export default function SplitLayout() {
           <ProjectGrid />
           <GithubActivity />
           <PublicationList />
-          <AboutSummary />
+          <div className="personal-grid">
+            <AboutSummary />
+            <ReadingCard />
+          </div>
         </div>
       </div>
     </div>
