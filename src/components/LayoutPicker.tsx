@@ -49,6 +49,7 @@ export default function LayoutPicker({
         event.shiftKey ||
         (target instanceof HTMLElement &&
           (target.isContentEditable ||
+            target.closest("[data-keyboard-navigation]") ||
             /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)))
       )
         return;

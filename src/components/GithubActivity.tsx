@@ -66,6 +66,7 @@ export default function GithubActivity() {
             </p>
             <div
               className="calendar-scroll"
+              data-keyboard-navigation
               tabIndex={0}
               role="region"
               aria-label="GitHub contribution calendar, scroll horizontally to see the full year"
