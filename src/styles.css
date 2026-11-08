@@ -1439,7 +1439,8 @@ svg {
   flex-shrink: 0;
 }
 .product-logo--citely {
-  background: #edbbb0;
+  background: #ff0060;
+  background: color(display-p3 0.917647 0.2 0.407843);
 }
 .product-details {
   flex: 1;
@@ -2280,7 +2281,7 @@ body:has(.site--split) {
   flex-wrap: wrap;
   gap: 10px;
 }
-.social-links a.button {
+.social-links .button {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -2292,12 +2293,12 @@ body:has(.site--split) {
   background: var(--yellow);
   box-shadow: 3px 3px 0 var(--line);
 }
-.social-links a.button:active {
+.social-links .button:active {
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0 var(--line);
 }
 @media (hover: hover) and (pointer: fine) {
-  .social-links a.button:hover {
+  .social-links .button:hover {
     background: var(--yellow);
     transform: translate(-1px, -1px);
     box-shadow: 4px 4px 0 var(--line);
@@ -2347,4 +2348,113 @@ body:has(.site--split) {
 }
 .founder-profile .social-links {
   gap: 8px;
+}
+
+.copy-email {
+  position: relative;
+  display: inline-flex;
+}
+.copy-email-icons {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+.copy-email-icons svg {
+  position: absolute;
+  inset: 0;
+  transition:
+    opacity 160ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 160ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.copy-email-check {
+  opacity: 0;
+  transform: translateY(4px) scale(0.85);
+}
+.copy-email[data-state="copied"] .copy-email-envelope {
+  opacity: 0;
+  transform: translateY(-4px) scale(0.85);
+}
+.copy-email[data-state="copied"] .copy-email-check {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.copy-email-status {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  z-index: 2;
+  max-width: min(300px, 80vw);
+  width: max-content;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--yellow);
+  color: var(--line);
+  font: 500 11px/1.5 var(--font-sans);
+  opacity: 0;
+  transform: translateY(3px);
+  pointer-events: none;
+  transition:
+    opacity 160ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 160ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.copy-email[data-state="copied"] .copy-email-status,
+.copy-email[data-state="error"] .copy-email-status {
+  opacity: 1;
+  transform: translateY(0);
+}
+.copy-email[data-state="error"] .copy-email-status {
+  pointer-events: auto;
+  user-select: text;
+}
+.project-recognition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 44px;
+  margin-top: 16px;
+  color: var(--muted);
+  font: 500 12px/1.4 var(--font-sans);
+}
+.project-recognition:hover {
+  color: var(--ink);
+}
+.project-recognition:hover > span:nth-child(2) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.accelerator-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 5px 8px;
+  background: #fffdf4;
+  border-radius: 6px;
+}
+.accelerator-logo img {
+  display: block;
+  width: 64px;
+  height: 24px;
+  object-fit: contain;
+}
+.recognition-period {
+  display: block;
+  margin-top: 3px;
+  font: 400 10px/1.4 var(--font-mono);
+}
+@media (prefers-reduced-motion: reduce) {
+  .copy-email-icons svg,
+  .copy-email-status {
+    transition: none;
+    transform: none;
+  }
+  .copy-email[data-state="copied"] .copy-email-envelope,
+  .copy-email[data-state="copied"] .copy-email-check,
+  .copy-email[data-state="copied"] .copy-email-status {
+    transform: none;
+  }
 }

@@ -38,6 +38,30 @@ export default function ProjectGrid() {
                   <h3>{project.title}</h3>
                 </div>
                 <p>{project.description}</p>
+                {project.recognition && (
+                  <a
+                    className="project-recognition"
+                    href={project.recognition.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="accelerator-logo">
+                      <img
+                        src={project.recognition.logo}
+                        alt="egg – enter grow go"
+                        width="64"
+                        height="24"
+                      />
+                    </span>
+                    <span>
+                      {project.recognition.label}
+                      <span className="recognition-period">
+                        {project.recognition.period}
+                      </span>
+                    </span>
+                    <ArrowUpRight size={14} aria-hidden="true" />
+                  </a>
+                )}
                 {project.siteUrl && (
                   <a
                     href={project.siteUrl}

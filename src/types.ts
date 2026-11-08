@@ -1,7 +1,7 @@
 export interface SocialLink {
   platform: string;
   url: string;
-  iconName: "github" | "linkedin" | "mail" | "scholar" | "twitter";
+  iconName: "github" | "linkedin" | "mail" | "twitter";
 }
 
 export interface Profile {
@@ -34,6 +34,12 @@ export interface Project {
   illustration: "memory" | "companies" | "world" | "library" | "arena";
   description: string;
   logo?: string;
+  recognition?: {
+    label: string;
+    period: string;
+    logo: string;
+    url: string;
+  };
   tags: string[];
   siteUrl?: string;
   repoUrl?: string;

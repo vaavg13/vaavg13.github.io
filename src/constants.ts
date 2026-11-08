@@ -13,9 +13,7 @@ export const PROFILE: Profile = {
   avatarUrl: avatarImg,
   aboutLead:
     "I’m an AI Engineer at Tapforce, building AI systems for education and knowledge work.",
-  about: `My work spans book ingestion, semantic indexing, and retrieval, alongside tools that turn educational content into slides, videos, and interactive learning experiences.
-
-Outside of work, I’m building Skilltap and Trailblazer. I previously worked on One Realm and ran Citely, an academic literature platform. I like working across the product and the engineering, from shaping an idea to building the systems that make it work.`,
+  about: `I’m an AI engineer with roots in research and a habit of turning “what if?” into side projects. Alongside my work, I’m exploring ideas and building products, looking for one worth going all in on as a company. Away from the keyboard, I’m usually reading, backpacking, or making music.`,
   focusAreas: ["Applied AI", "Knowledge systems", "Product engineering"],
   socials: [
     {
@@ -32,11 +30,6 @@ Outside of work, I’m building Skilltap and Trailblazer. I previously worked on
       platform: "LinkedIn",
       url: "https://www.linkedin.com/in/vasilis-avgerinos-09468425a/",
       iconName: "linkedin",
-    },
-    {
-      platform: "Google Scholar",
-      url: "https://scholar.google.com/citations?user=ZypVDRAAAAAJ&hl=en",
-      iconName: "scholar",
     },
     {
       platform: "Email",
@@ -114,6 +107,12 @@ export const PROJECTS: Project[] = [
     logo: "/logos/citely.svg",
     description:
       "An academic literature platform for exploring papers and their connections with AI.",
+    recognition: {
+      label: "Accepted into egg",
+      period: "2023–2024",
+      logo: "/logos/egg.svg",
+      url: "https://www.theegg.gr/en",
+    },
     tags: ["Literature discovery", "Knowledge graphs", "AI"],
   },
   {
