@@ -2238,3 +2238,14 @@ body:has(.site--split) {
     min-height: 150px;
   }
 }
+
+.split-content,
+.calendar-frame {
+  min-width: 0;
+}
+.calendar-scroll {
+  max-width: 100%;
+}
+.other-row > div {
+  min-width: 0;
+}
