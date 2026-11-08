@@ -106,6 +106,7 @@ export const PROJECTS: Project[] = [
     category: "Research tools",
     status: "Past venture",
     illustration: "library",
+    logo: "/logos/citely.svg",
     description:
       "An AI-powered academic literature platform I ran a few years back.",
     tags: ["Literature discovery", "Knowledge graphs", "AI"],
