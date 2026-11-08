@@ -51,4 +51,5 @@ vercel deploy --prod --scope bill-personal-team
 
 The project is connected to `vaavg13/vaavg13.github.io`. Pushes to `main`
 deploy to production, and other branches receive preview deployments.
-The existing GitHub Pages deployment remains available during migration.
+Automatic GitHub Pages publishing is disabled. Vercel manages automatic
+production and preview deployments.
