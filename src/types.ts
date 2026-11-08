@@ -34,6 +34,7 @@ export interface Project {
   status: string;
   illustration: "memory" | "companies" | "world" | "library" | "arena";
   description: string;
+  logo?: string;
   tags: string[];
   siteUrl?: string;
   repoUrl?: string;

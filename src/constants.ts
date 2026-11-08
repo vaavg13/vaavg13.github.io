@@ -7,9 +7,9 @@ import avatarImg from "./assets/images/profile.jpeg";
 
 export const PROFILE: Profile = {
   name: "Bill Avgerinos",
-  title: "AI Engineer",
-  tagline: "Building AI-powered products and knowledge systems.",
-  affiliation: "Currently at Tapforce",
+  title: "Founder & AI engineer",
+  tagline: "Building Skilltap and Trailblazer. Turning ideas into products.",
+  affiliation: "Building from Athens",
   location: "Athens, Greece",
   avatarUrl: avatarImg,
   aboutLead:
@@ -72,8 +72,9 @@ export const PROJECTS: Project[] = [
     category: "Team knowledge",
     status: "Coming soon",
     illustration: "memory",
+    logo: "/logos/skilltap.svg",
     description:
-      "Shared memory for teams working with AI agents. I’m building a way to turn useful corrections, decisions, and lessons into reusable knowledge, so teammates and their agents don’t keep relearning the same things.",
+      "Shared memory for teams and their AI agents. Lessons learned once, reused across the team.",
     tags: ["AI agents", "Team memory", "Developer tools"],
   },
   {
@@ -82,8 +83,9 @@ export const PROJECTS: Project[] = [
     category: "Company intelligence",
     status: "Under development",
     illustration: "companies",
+    logo: "/logos/trailblazer.svg",
     description:
-      "Company research and lead discovery built around registry data, financial information, and the connections between companies and people. I’m working on turning scattered records into evidence-backed company profiles and useful research workflows.",
+      "Company intelligence, from registry records to useful research and lead discovery.",
     tags: ["Company data", "Data pipelines", "Applied AI"],
   },
   {
@@ -92,8 +94,9 @@ export const PROJECTS: Project[] = [
     category: "Worldbuilding & tabletop",
     status: "Previous work",
     illustration: "world",
+    logo: "/logos/one-realm.svg",
     description:
-      "A platform for building and running tabletop worlds, bringing together campaign lore, characters, maps, and a virtual tabletop. I worked on the product and the systems behind world management and AI-assisted play.",
+      "Worldbuilding and tabletop tools. I worked on the product and AI-assisted play.",
     tags: ["Worldbuilding", "Tabletop", "AI tools"],
     siteUrl: "https://one-realm.com",
   },
@@ -104,7 +107,7 @@ export const PROJECTS: Project[] = [
     status: "Past venture",
     illustration: "library",
     description:
-      "An academic literature platform I ran a few years back, focused on helping researchers organize papers, explore connections between them, and understand scientific work using AI.",
+      "An AI-powered academic literature platform I ran a few years back.",
     tags: ["Literature discovery", "Knowledge graphs", "AI"],
   },
   {

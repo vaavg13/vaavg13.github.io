@@ -1,17 +1,35 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ArrowUpRight, Moon, Sun } from "lucide-react";
-import Header from "./components/Header";
-import PublicationList from "./components/PublicationList";
-import ProjectGrid from "./components/ProjectGrid";
-import SectionHeading from "./components/SectionHeading";
+import IllustratedLayout from "./layouts/IllustratedLayout";
+import SplitLayout from "./layouts/SplitLayout";
+import LayoutPicker, { type LayoutVariant } from "./components/LayoutPicker";
 import SocialLinks from "./components/SocialLinks";
-import { NetworkSketch, Sparkle, Ufo } from "./components/Illustrations";
+import { Sparkle } from "./components/Illustrations";
 import { PROFILE } from "./constants";
 
 export default function App() {
   const [nightMode, setNightMode] = useState(
     () => document.documentElement.dataset.theme === "night",
   );
+  const [layout, setLayout] = useState<LayoutVariant>(() =>
+    new URLSearchParams(window.location.search).get("v") === "2" ? 1 : 0,
+  );
+  const changeLayout = useCallback((next: LayoutVariant) => {
+    setLayout(next);
+    const url = new URL(window.location.href);
+    url.searchParams.set("v", String(next + 1));
+    url.hash = "";
+    window.history.replaceState(null, "", url);
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
+  useEffect(() => {
+    const syncLayout = () =>
+      setLayout(
+        new URLSearchParams(window.location.search).get("v") === "2" ? 1 : 0,
+      );
+    window.addEventListener("popstate", syncLayout);
+    return () => window.removeEventListener("popstate", syncLayout);
+  }, []);
   const email = PROFILE.socials.find((social) => social.iconName === "mail")!;
 
   function toggleTheme() {
@@ -43,9 +61,9 @@ export default function App() {
             </span>
           </a>
           <div className="nav-links">
+            <a href="#projects">Products</a>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#research">Publications</a>
+            <a href="#other">Other work</a>
             <a href="#contact">
               Say hello <ArrowUpRight size={15} />
             </a>
@@ -65,63 +83,21 @@ export default function App() {
         </div>
       </nav>
       <main id="main" tabIndex={-1}>
-        <Header />
+        <div key={layout}>
+          {layout === 0 ? <IllustratedLayout /> : <SplitLayout />}
+        </div>
         <section
-          className="about-section section-space"
-          id="about"
-          aria-labelledby="about-title"
-        >
-          <div className="page-width about-grid">
-            <div>
-              <SectionHeading
-                number="01"
-                label="About"
-                title={<span id="about-title">About my work.</span>}
-              />
-              <div className="about-sketch">
-                <NetworkSketch />
-              </div>
-            </div>
-            <div className="about-copy">
-              <p className="about-lead">{PROFILE.aboutLead}</p>
-              {PROFILE.about.split("\n\n").map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-              <div className="focus-areas">
-                <p className="eyebrow">Currently exploring</p>
-                <div className="tags">
-                  {PROFILE.focusAreas.map((area) => (
-                    <span key={area}>{area}</span>
-                  ))}
-                </div>
-              </div>
-              <SocialLinks />
-            </div>
-          </div>
-        </section>
-        <ProjectGrid />
-        <PublicationList />
-        <section
-          className="contact-section"
+          className="compact-contact page-width"
           id="contact"
           aria-labelledby="contact-title"
         >
-          <div className="page-width contact-inner">
-            <div className="contact-copy">
-              <p className="eyebrow">Contact</p>
-              <h2 id="contact-title">
-                Get in touch<span>.</span>
-              </h2>
-              <p>For projects, products, or collaboration.</p>
-              <a href={email.url} className="button button-yellow">
-                Email me <ArrowUpRight size={20} />
-              </a>
-            </div>
-            <div className="contact-illustration">
-              <Ufo />
-              <Sparkle className="contact-sparkle" />
-            </div>
+          <div>
+            <p className="eyebrow">Say hello</p>
+            <h2 id="contact-title">Let’s make something.</h2>
           </div>
+          <a href={email.url} className="button button-yellow">
+            Email me <ArrowUpRight size={20} />
+          </a>
         </section>
       </main>
       <footer className="site-footer">
@@ -139,6 +115,7 @@ export default function App() {
           <SocialLinks />
         </div>
       </footer>
+      <LayoutPicker value={layout} onChange={changeLayout} />
     </div>
   );
 }
